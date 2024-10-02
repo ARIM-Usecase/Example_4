@@ -15,7 +15,7 @@ import sys
 # 次のハイパーパラメータが含まれています。これらのデフォルト値は、下記のget_config関数で
 # 指定されたバージョンによって後で更新されます。
 
-def gen_default(dataset, size, batch_size=4, lr=1e-4, epoch=5):
+def gen_default(dataset, size, batch_size=4, lr=1e-4, epoch):
     """
     データセットのデフォルト設定を生成する関数。
 
@@ -46,7 +46,7 @@ def gen_default(dataset, size, batch_size=4, lr=1e-4, epoch=5):
 
 config = {
     'output': {
-        'default': gen_default('output', size=10),
+        'default': gen_default('output', size=10, epoch=50),
         'v1': {'lr': 0.00035446559318532957}
     }
 }
