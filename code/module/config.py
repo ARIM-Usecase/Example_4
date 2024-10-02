@@ -15,7 +15,7 @@ import sys
 # 次のハイパーパラメータが含まれています。これらのデフォルト値は、下記のget_config関数で
 # 指定されたバージョンによって後で更新されます。
 
-def gen_default(dataset, size, batch_size=4, lr=1e-4, epoch=50):
+def gen_default(dataset, size, batch_size=4, lr=1e-4, epoch=30):
     """
     データセットのデフォルト設定を生成する関数。
 
@@ -30,7 +30,7 @@ def gen_default(dataset, size, batch_size=4, lr=1e-4, epoch=50):
         dict: デフォルト設定の辞書。
     """
     default = {
-        'data_dir': './argumemt_data/' + dataset,
+        'data_dir': './argmemtated_data/' + dataset,
         'size': size,
         'batch_size': batch_size,
         'optimizer': 'Adam',
